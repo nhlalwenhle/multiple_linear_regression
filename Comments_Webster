@@ -1,0 +1,23 @@
+~ Notebook>>>>> Not clean. Delete empty lines. DO not submit code with errors. Debug or delete code that is not working
+
+~ Avoid unnecessary steps like this one 'metadata: pd.read_csv("Salary_metadata.csv", sep='\t')' necessary?
+
+~ I think '.isnull().sum()' is better than the boolean version '.isnull().values.any()' because it helps you decide how best to deal with the null values if they are many
+
+~ It also helps to '.describe()' your data before and after your '.dropna()' method to make sure your method worked and to statistically check how your method has changed your data integrity
+
+~ If you are using all columns/variables in your model, simply use 'X = df.drop(['salary'], axis=1)'
+
+~ Is it a good idea to use all the variables for modelling?
+
+~ Was this not supposed to be from the model 'statsmodel' and not 'sklearn'>>>> mlm = linear_model.LinearRegression()
+
+~ One-hot code: Use HR as the reference category. Drop old columns after .concat() otherwise you will have duplicated the data. Is this dataset going to be used in the model? Is the one-hot coding necessary?
+
+~ Multicollinearity: Don't you think this might be a problem for your model 'position/yearsworked(0.755) > position/salary (0.703)'? 
+
+~ Clarity: This is a new model 'mlm = smf.ols()' you are training and testing
+
+~ Debug: This code contains labels for a different dataset 'plt.xlabel('headsize'); plt.ylabel('brain weight')'. Probably copied and pasted for elsewhere, the rest of the code in the notebook did not work. Needs debugging
+
+~ MSE: Why not use 'mean_squared_error' imported from sklearn and not 'np.mean((mlm.predict(X_test) - y_test) ** 2))'
