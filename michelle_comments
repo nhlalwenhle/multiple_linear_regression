@@ -1,0 +1,8 @@
+Changes to be made/ added:
+
+- format your README nicely so that it is easy to read for outsiders
+- assignment seems incompleted. Calculate and comment on the RMSEs
+- You should explore the data before building the model - create the exploratory graphs first before doing the regression. Fix problem that you notice: e.g. salary is not normally distributed and could do with a log transformation.
+- some code errors to fix: mlm is not defined
+
+Overall, focus on telling the story of what you are doing, in other words, have more text cells explaining to the readers what is going on and giving your interpretation of the data and findings.
